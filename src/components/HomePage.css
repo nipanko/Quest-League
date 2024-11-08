@@ -1,0 +1,87 @@
+/* src/components/HomePage.css */
+.home-page-container {
+    padding: 40px 20px;
+    background: linear-gradient(to right, #78a541, #7802d9);
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .welcome-section,
+  .image-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .speech-recognition-container {
+    margin: 40px 0;
+  }
+  
+  .listening-text {
+    margin-top: 10px;
+  }
+  
+  .transcript {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .user-avatar {
+    margin: 20px auto;
+  }
+  
+  .auth-buttons {
+    margin-top: 20px;
+  }
+  
+  .auth-button {
+    margin: 0 5px;
+  }
+  
+  .image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .quest-league-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .image-text {
+    margin-top: 24px;
+    color: #333;
+  }
+  
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
+  }

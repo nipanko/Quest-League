@@ -18,7 +18,7 @@ function TaskUpload() {
   };
 
   return (
-    <div>
+    <div className="main-content">
       <h2>Upload Task Proof</h2>
       <input type="file" onChange={handleFileChange} />
       <button onClick={handleUpload} style={{ marginTop: "10px", padding: "10px 20px", backgroundColor: "#4CAF50", color: "white" }}>
