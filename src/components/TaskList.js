@@ -1,5 +1,6 @@
 // src/components/TaskList.js
 import React from "react";
+import { Grid, Paper, Typography } from "@mui/material";
 
 function TaskList() {
   const tasks = [
@@ -11,13 +12,15 @@ function TaskList() {
   return (
     <div>
       <h2>Tasks to Complete</h2>
-      <ul>
-        {tasks.map(task => (
-          <li key={task.id} style={{ margin: "10px 0", padding: "10px", border: "1px solid #ddd" }}>
-            {task.name}
-          </li>
+      <Grid container spacing={3}>
+        {tasks.map((task) => (
+          <Grid item xs={12} sm={6} md={4} key={task.id}>
+            <Paper elevation={3} style={{ padding: "10px", textAlign: "center" }}>
+              <Typography variant="h6">{task.name}</Typography>
+            </Paper>
+          </Grid>
         ))}
-      </ul>
+      </Grid>
     </div>
   );
 }

@@ -8,6 +8,8 @@ function Navbar() {
       <Link to="/" style={{ margin: "0 15px", color: "white", textDecoration: "none" }}>Tasks</Link>
       <Link to="/upload" style={{ margin: "0 15px", color: "white", textDecoration: "none" }}>Upload Task</Link>
       <Link to="/leaderboard" style={{ margin: "0 15px", color: "white", textDecoration: "none" }}>Leaderboard</Link>
+      <Link to="/login" style={{ margin: "0 15px", color: "white", textDecoration: "none" }}>Login</Link>
+      <Link to="/signup" style={{ margin: "0 15px", color: "white", textDecoration: "none" }}>Signup</Link>
     </nav>
   );
 }
